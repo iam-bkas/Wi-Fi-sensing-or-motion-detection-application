@@ -19,6 +19,11 @@ Accuracy & Limits:
 - Best for occupancy, coarse motion, and event detection; fine localization needs multi‑AP setups.
 - Privacy benefits (no video), but can still infer presence/behaviors — treat as sensitive data.
 
+  Before using this app
+  - Install dependencies >> python -m pip install matplotlib numpy
+  - Run the GUI: >> python -m motion_tracker.gui
+  - Run CLI with visualize: >> python -m motion_tracker.cli --visualize
+
 If You Want To Try It:
 - Quick demo: sample Wi‑Fi signal strength and detect motion via variance thresholds (coarse, works broadly).
 - Better fidelity: use hardware that exposes CSI (e.g., ESP32/Nexmon/Intel 5300) and run a Python pipeline for filtering, feature extraction, and classification.
